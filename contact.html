@@ -1,54 +1,63 @@
 <!DOCTYPE html>
-<html lang="en-us">
-
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Seth Walton Bio</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+	<title>Contact Me</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
-	<div id="Nav">
-		<header class="seth">Seth Walton</header>
-		<ul>
-		  <li><a href="contact.html">Contact</a></li>
-		  <li><a href="Portfolio.html">Portfolio</a></li>
-		  <li><a href="index.html">About</a></li>
-		</ul>
-	</div>
-<body background= "assets\images\back.jpg";>	
-	
+<body>
+	<header id="masthead">
+		<div class ="container">
+			<a href="index.html" id= "logo">Seth Walton</a>
+				<nav>
+				<a href="index.html">About</a>
+				<a href="portfolio.html">Portfolio</a>
+				<a href="contact.html">Contact</a>
+				</nav>
+		</div>
+	</header>
+	<div id="main-container" class="container">
+		<section class="main-section">
+			<h1>Contact</h1>
+			
+			<form id="contact-form"> 
+				<ul>
+					<li>
+						<label for="name">Name</label>
+						<input type="text" name="name" id="name" placeholder="John Doe" required= "required">
+					</li>
+					<li>
+						<label for="email">Email</label>
+						<input type="text" name="email" id="email" placeholder="example@gmail.com" required= "required">
+					</li>
+					<li>
+						<label for="message">Message</label>
+						<textarea id="message" name="message" required="required">
+						</textarea>
+					</li> 
+				</ul>
+				<input type="submit" name="submit">
 
-	<div id= "container">
-		<div id="connect">
-			<h2>Connect with me</h2>
-			<div id= "links">
+			</form>
+			
+		</section>
+
+		<section class="sidebar">
+			<div id="connect">
+				<h2>Connect with Me</h2>
+				<img src="assets/images/github.png" class="social" alt="GitHub">
+				<img src="assets/images/linkedin.png" class="social" alt="LinkedIn">
+				<img src="assets/images/stack.png" class="social" alt="Stack">
 				
-				<a href="https://github.com/wmadhatterw"><img border="0" src="assets/images/github.png"></a>
-				<a href="https://www.linkedin.com/in/seth-walton-4b6399144/"><img border="0" src="assets/images/linkedin.png"></a>
-				<a href="https://stackoverflow.com/users/8322826/seth-walton"><img border="0" src="assets/images/stack.png"></a>
-			
 			</div>
 			
-		</div>
-
-
-			<div id="contact">
-			<h1>Contact Me</h1>
-			<div id= "input">
-				<form>
-				Name:<br>
-				<input class="name" type="text" name="Name" value="John Doe"><br>
-				Email:<br>
-				<input class="email" type="text" name="Email" value="Example@gmail.com"><br>
-				Message:<br>
-				<input class="msg" type="text" name="Message" value=""><br>
-				<input class="button" type="submit" value="Submit">
-				</form>
-			</div>
-		
-		</div>
+		</section>
 	</div>
-<footer> &#169 Copyright 2017 Seth Walton</footer>
-	
-
+	<footer>
+		<div class="container">
+			&copy; Copyright 2017 Seth Walton
+			
+		</div>
+	</footer>
 </body>
 </html>
