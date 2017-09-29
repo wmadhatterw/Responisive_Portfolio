@@ -215,5 +215,69 @@ input[type=submit] {
 input[type=text],
 input[type=email] {
 	opacity: 0.6;
+}
 
+/*@Media Screen*/
+
+@media screen and (max-width: 980px) {
+
+	.main-section {
+	max-width: 480px;
+	}
+	.auth-img{
+		width: 460px;
+	}
+	p{
+		clear:both;
+	}
+}
+@media screen and (max-width: 768px) {
+	.main-section {
+		max-width: 640px;
+	
+	}
+	.sidebar{
+		position: relative;
+		float: left;
+		left: 15px;
+		min-width:  95%;
+	}
+	.main-section {
+		position: relative;
+		left: 15px;
+		min-width: 95%;
+	}
+	#masthead {
+		padding:0px 15px;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	#masthead {
+		position: static;
+		padding: 0;
+	}
+	#masthead #logo {
+		float: left;
+		margin: 0;
+		width: 100%;
+	}
+	nav {
+		background: white;
+		clear: both;
+		width: 100%;
+		height: 60px;
+		margin: 0;
+	}
+	nav a{
+		text-align: center;
+		margin-top: 20px; 
+		width: 180px;
+	}
+	.main-section {
+		width: 95%;
+	}
+
+
+	}
 }
